@@ -1,2 +1,26 @@
 # DID-AI
-DID分析助手，自动构建DID模型（Python或Stata），自动执行平行趋势检验、安慰剂检验，解读回归结果、自动写论文方法部分。
+
+**DID-AI** is an open-source toolkit that empowers researchers with automated Difference-in-Differences (DID) analysis using LLMs like DeepSeek. Designed for social scientists, economists, and policy analysts.
+
+## 🌟 Key Features
+
+- 📊 One-click DID estimation from raw data
+- 🧠 Natural language interpretation of regression results
+- 📈 Automated parallel trend & placebo tests
+- ✍️ Paper-ready methods and results writeup (in Markdown/LaTeX)
+- 📁 Easy CSV/Excel data upload interface
+
+## 🔧 Technologies
+
+- Python (pandas, statsmodels, linearmodels)
+- Streamlit (UI)
+- DeepSeek API / OpenAI API (LLM integration)
+
+## 📦 Getting Started
+
+```bash
+git clone https://github.com/yourname/DID-AI.git
+cd DID-AI
+pip install -r requirements.txt
+streamlit run src/main.py
+
