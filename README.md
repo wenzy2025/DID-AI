@@ -1,6 +1,6 @@
 # DID-AI
 
-**DID-AI** is an open-source toolkit that empowers researchers with automated Difference-in-Differences (DID) analysis using LLMs like DeepSeek. Designed for social scientists, economists, and policy analysts.
+**DID-AI** is an open-source toolkit that empowers researchers with automated Difference-in-Differences (DID) analysis. It combines convenient Python utilities with LLM powered result summaries.
 
 ## 🌟 Key Features
 
@@ -12,15 +12,34 @@
 
 ## 🔧 Technologies
 
-- Python (pandas, statsmodels, linearmodels)
+- Python (pandas, statsmodels)
 - Streamlit (UI)
 - DeepSeek API / OpenAI API (LLM integration)
 
 ## 📦 Getting Started
 
 ```bash
-git clone https://github.com/yourname/DID-AI.git
-cd DID-AI
 pip install -r requirements.txt
-streamlit run src/main.py
+python src/main.py sample_data/did_example_data.csv --outcome outcome --treatment treated --time time
+```
 
+## Repository Structure
+
+```
+DID-AI/
+├── README.md
+├── requirements.txt
+├── src/
+│   ├── main.py             # Application entry point
+│   ├── did_model.py        # DID estimation utilities
+│   ├── placebo_test.py     # Placebo test implementation
+│   ├── trend_test.py       # Parallel trend check
+│   ├── llm_writer.py       # LLM result summarizer
+│   └── utils.py            # Helper functions
+├── notebooks/
+│   └── example_did_analysis.ipynb
+├── prompts/
+│   └── result_interpretation_prompt.md
+└── sample_data/
+    └── did_example_data.csv
+```
